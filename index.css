@@ -1,0 +1,29 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-blue: #2563eb;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+/* Custom Scrollbar for Enterprise UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prevent Pull-to-refresh on mobile devices */
+html, body {
+  overscroll-behavior-y: contain;
+}

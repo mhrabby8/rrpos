@@ -1,0 +1,8 @@
+{
+  "name": "4.5 Petuker Astana POS",
+  "description": "Enterprise-grade restaurant and food cart POS with multi-branch management, inventory, accounting, and offline capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
