@@ -1865,8 +1865,8 @@ const StaffManagementView = ({ staff, setStaff, branches, impersonateStaff, sett
     
     const data = {
       name: formData.get('name') as string,
-      username: formData.get('username') as string,
-      password: formData.get('password') as string,
+      username: (formData.get('username') as string || "").trim(),
+      password: (formData.get('password') as string || "").trim(),
       role: formData.get('role') as Role,
       assignedBranchIds: selectedBranchIds,
       salary: parseFloat(formData.get('salary') as string) || 0,
